@@ -1,8 +1,8 @@
 name: Build and Release k-NN
 on:
   push:
-    branches:
-      - opendistro-*
+    tags: 
+      - v*
 
 jobs:
   Build-k-NN:
