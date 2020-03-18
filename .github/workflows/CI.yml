@@ -26,10 +26,7 @@ jobs:
       - name: Run build
         run: |
           ./gradlew build
-          
-      - name: Build Packages to Test
-        run: |
-          ./gradlew build --console=plain -Dbuild.snapshot=false
+          ls -ltr build/distributions/
           
       - name: Pull and Run Docker
         run: |
